@@ -1,0 +1,38 @@
+.contain{
+	width:1300px;
+}
+h2{
+	font-family:Verdana, sans-serif;
+}
+.div1{
+	width:550px;
+	float:left;
+	margin-left:100px;
+}
+.div2{
+	width:550px;
+	float:left;
+}
+.div3{
+	width:550px;
+	float:left;
+	margin-left:100px;
+}
+.div4{
+	width:550px;
+	float:left;
+}
+#button{
+	background-color:#DCDCDC;
+	width: 80px;
+	height:30px;
+	border:2px solid #2F4F4F;
+}
+#button:hover{
+	background-color:#F5F5F5;
+}
+select:hover{
+    background-color:red;
+    position: relative;
+    display: inline-block;
+}
