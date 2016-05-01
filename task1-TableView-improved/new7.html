@@ -115,7 +115,22 @@
 		<button onClick="change();" class="button">Submit</button>
 		<button class="button" onClick="refresh();"> Reset </button>
 		<a href="new 7.html"><button class="button"> Refresh </button></a>
-        <button onClick="print()" class="button"> Print </button>		<hr />		
+        <button onClick="print()" class="button"> Print </button>
+        <hr />
+        <select name="" id="page_type">
+ 			   <option value="0">Select --</option>
+ 			   <option value="a3">A3</option>
+ 			   <option value="a4">A4</option>
+ 			   <option value="a5">A5</option>
+ 		   </select>
+        <select name="" id="view_type">
+ 			   <option value="0">Select --</option>
+ 			   <option value="canvasA">Front View</option>
+ 			   <option value="canvasB">Side View</option>
+ 			   <option value="canvasC">Top View</option>
+ 			   <option value="canvasD">Bottom View</option>
+ 		   </select>
+        <button class="button download_pdf"> Download </button> <hr />
     </header>
 	<section>
 	  <!-- making of canvas -->
@@ -145,6 +160,8 @@
 	</script>
 	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/pdf.js"></script>
    </div>
  </body>
 </html>
