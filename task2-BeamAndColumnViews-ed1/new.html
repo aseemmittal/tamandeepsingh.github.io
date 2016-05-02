@@ -80,6 +80,21 @@
 	 <a href="new.html"><button class="btn btn-info">Refresh</button></a>
 	 <button class="btn btn-info" onClick="print()">Print</button>
 	 <hr />
+   <select name="" id="page_type">
+    <option value="0">Select --</option>
+    <option value="a3">A3</option>
+    <option value="a4">A4</option>
+    <option value="a5">A5</option>
+  </select>
+   <select name="" id="view_type">
+    <option value="0">Select --</option>
+    <option value="can1">Cross-Section View of beam (left-side)</option>
+    <option value="can2">Cross-Section View of beam (right-side)</option>
+    <option value="can3">Cross-Section View of Column (bottom-view)</option>
+    <option value="can4">Cross-Section View of Column (top-view)</option>
+    <option value="can5">Internal View of Beam and Column</option>
+  </select>
+   <button class="btn btn-info download_pdf"> Download </button> <hr />
 	 <div class="row">
 	 <div class="col-md-3"><h3>Cross-Section View of beam (left-side)</h3>
 	 <canvas id="can1" width="200" height="200" style="border: 1px solid black"></canvas></div>
@@ -92,8 +107,11 @@
      </div>
      <div class="row"><h2><center>Internal View of Beam and Column</center></h2>
      <canvas id="can5" width="1100" height="800" style="border: 1px solid black"></canvas></div><hr />
-	 <script type="text/javascript" src="task2.js">
+	 <script src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="task2.js">
 	 </script>
+   <script src="js/jspdf.min.js"></script>
+   <script src="js/pdf.js"></script>
 	 </div>
  </body>
 </html>
